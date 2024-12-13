@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.content{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.navi{
+    color: white;
+    margin-top: 30px;
+    padding-right: 50px;
+}
+.navi a{
+    margin-left: 20px;
+}
+.logo{
+    color: white;
+    margin-left: 50px;
+}
+.navi a i{
+    display: none;
+}
+@media (max-width:768px){
+    .navi a:not(:last-child) {
+        display: none;
+    }
+    .navi a:last-child i {
+        display: block;
+        margin-top: -20px;
+    }
+}

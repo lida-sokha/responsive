@@ -1,0 +1,27 @@
+.contenter{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 5px;
+    padding: 5px;
+}
+.box{
+    background-color: aqua;
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+}
+@media (max-width:1000px) {
+    .contenter{
+        grid-template-columns: auto auto auto;
+    }
+}
+@media (max-width:768px){
+    .contenter{
+        grid-template-columns: auto auto;
+    }
+}
+@media (max-width:480px){
+    .contenter{
+        grid-template-columns: auto;
+    }
+}
